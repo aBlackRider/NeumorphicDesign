@@ -25,7 +25,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  bool _isElevated = false;
+  bool _isElevated = true;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
             });
           },
           child: AnimatedContainer(
-            child: Icon(Icons.ac_unit),
+            child: Icon(Icons.access_alarm, size: 100,),
             duration: const Duration(milliseconds: 200),
             height: 200,
             width: 200,
